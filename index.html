@@ -464,17 +464,31 @@
                                         <div class="content__block__first-election-content-body">
                                             <p>Для того, чтобы проголосовать за видео, нужно сделать репост в любой из соцсетей:</p>
                                         </div>
-                                        <div class="content__block__first-election-content-buttons">
-                                            <div class="content__block__first-election-content-buttons-facebook">
-                                                <img src="img/facebook-button.png">
+                                        <div class="content__block__first-election-content-buttons-wrapper">
+                                            <div class="content__block__first-election-content-buttons">
+                                                <div class="content__block__first-election-content-buttons-facebook">
+                                                    <picture>
+                                                        <source srcset="img/facebook-button.png" type="image/png" media="(min-width:480px)"> 
+                                                        <source srcset="img/facebook-logo.png" type="image/png" media="(max-width:480px)"> 
+                                                        <img src="img/facebook-button.png">
+                                                    </picture>
+                                                </div>
+                                                <div class="content__block__first-election-content-buttons-vk">
+                                                    <picture>
+                                                        <source srcset="img/vk-button.png" type="image/png" media="(min-width:480px)"> 
+                                                        <source srcset="img/vk-logo.png" type="image/png" media="(max-width:480px)"> 
+                                                        <img src="img/facebook-button.png">
+                                                    </picture>
+                                                </div>
+                                                <div class="content__block__first-election-content-buttons-classmates">
+                                                    <picture>
+                                                        <source srcset="img/classmates-button.png" type="image/png" media="(min-width:480px)"> 
+                                                        <source srcset="img/classmates-logo.png" type="image/png" media="(max-width:480px)"> 
+                                                        <img src="img/facebook-button.png">
+                                                    </picture>
+                                                </div>
                                             </div>
-                                            <div class="content__block__first-election-content-buttons-vk">
-                                                <img src="img/vk-button.png">
-                                            </div>
-                                            <div class="content__block__first-election-content-buttons-classmates">
-                                                <img src="img/classmates-button.png">
-                                            </div>
-                                        </div>
+                                        </div>                                        
                                         <div class="content__block__first-election-content-votes">
                                             657 голосов
                                         </div>
@@ -493,6 +507,9 @@
                                     <h3>Персональное решение</h3>
                                     <p>Инвестиции 378 000 - 675 000 Р</p>
                                     <a href="#">Страница франшизы <img src="img/right.png"></a>
+                                </div>
+                                <div class="promotion__body_mobile">
+                                    <hr>
                                 </div>
                             </div>
                             <div class="promotion__body__right">
@@ -587,7 +604,12 @@
                                     </div>
                                     <div class="block__second__content__cost__body-content-footer">
                                         <div class="block__second__content__cost__body-content-footer-body">
-                                            <img src="img/download.png" style="cursor: pointer;"><a href="#" style="font-weight: 700; margin-left: 16px; cursor: pointer;">Запросить финансовый план</a>
+                                            <div class="block__second__content__cost__body-content-footer-img">
+                                                <img src="img/download.png" style="cursor: pointer;">
+                                            </div>
+                                            <div class="block__second__content__cost__body-content-footer-text">
+                                                <a href="#">Запросить финансовый план</a>
+                                            </div>
                                         </div>                      
                                     </div>
                                 </div>
@@ -609,19 +631,15 @@
                                     <li>Временно безработные люди</li>
                                 </ul>
                                 <a href="#"><p>Страница франшизы<img src="img/right.png" style="margin-left: 8px;"></p></a>
-                                <div class="block__third__content__body__photos">
-                                    <div class="block__third__content__body__photos-item">
-                                        <img src="img/photo-1.png" alt="фото 1">
-                                    </div>
-                                    <div class="block__third__content__body__photos-item">
-                                        <img src="img/photo-2.png" alt="фото 2">
-                                    </div>
-                                    <div class="block__third__content__body__photos-item">
-                                        <img src="img/photo-3.png" alt="фото 3">
-                                    </div>
-                                    <div class="block__third__content__body__photos-item">
-                                        <img src="img/photo-4.png" alt="фото 4">
-                                    </div>
+                                <div class="block__third__content__body__photos"> 
+                                    <div class="block__third__content__body__photos-1">
+                                        <img src="img/photo-1.png" alt="фото 1" class="block__third__content__body__photos-item" id="photo-item-1">
+                                        <img src="img/photo-2.png" alt="фото 2" class="block__third__content__body__photos-item">
+                                    </div>                
+                                    <div class="block__third__content__body__photos-2">
+                                        <img src="img/photo-3.png" alt="фото 3" class="block__third__content__body__photos-item" id="photo-item-3">
+                                        <img src="img/photo-4.png" alt="фото 4" class="block__third__content__body__photos-item">  
+                                    </div>   
                                 </div>
                             </div>
                         </div>
@@ -657,15 +675,20 @@
                                         </div>
                                         <input type="submit" value="Отправить сообщение" id="form-submit">
                                         <div class="security">
-                                            <img src="img/security-ico.png" alt="безопасность" width="35px" height="37px">
+                                            <img src="img/security-ico.png" alt="безопасность" class="security-ico">
                                             <div class="security-text">
                                                 Ваши данные в полной безопасности. Они видны только автору объявления.
                                             </div>
                                         </div>
+                                        <div class="security-mobile">
+                                            <hr>
+                                        </div>
                                     </form>
                                 </div>
                                 <div class="block__fourth__content__body-right">
-                                    <p style="font-weight: 700;">Что можно обсудить с представителем:</p>
+                                    <div class="block__fourth__content__body-right-title">
+                                        <p style="font-weight: 700;">Что можно обсудить с представителем:</p>
+                                    </div>
                                     <ul class="block__fourth__content__body-right-list">
                                         <li>Узнать есть ли возможность открытия в вашем городе</li>
                                         <li>Попросить контакты уже действующих франчайзи</li>
@@ -679,7 +702,9 @@
                         </div>
                     </div>
                     <div class="block__fifth">
-                        <hr>
+                        <div class="block__fifth-mobile">
+                            <hr>
+                        </div>
                         <div class="block__fifth__content">
                             <div class="block__fifth__content__title">
                                 <h2>Другие участники конкурса</h2>
